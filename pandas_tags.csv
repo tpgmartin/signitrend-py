@@ -1,4 +1,4 @@
-tag,creation_year_month,tag_count,all_tags_count
+tag_name,creation_year_month,tag_count,all_tags_count
 pandas,2011-03,1,344397
 pandas,2011-04,2,331520
 pandas,2011-05,1,351311
