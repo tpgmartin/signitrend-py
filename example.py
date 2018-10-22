@@ -7,6 +7,7 @@ pandas_tags = read_csv("pandas_tags.csv")
 simpletrend = SimpleTrend()
 
 for idx, row in pandas_tags.iterrows():
-    print(idx, row["tag_name"], row["creation_year_month"], row["tag_count"], row["all_tags_count"])
-    print(simpletrend.index_tag(row))
-    print('-------------------------')
+    simpletrend.index_tag(row)
+    print(simpletrend.end_of_timestep_analysis())
+    simpletrend.next_timestep()
+    print('--------------------')
